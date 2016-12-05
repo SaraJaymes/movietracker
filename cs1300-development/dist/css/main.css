@@ -1,0 +1,165 @@
+/* general CSS */
+body {
+  margin: 0px;
+  background-color: #eeeeee;
+}
+
+/* CSS for individual movies */
+.movie  {
+  width: 390px;
+  height: 190px;
+  margin: 5px;
+  display: inline-block;
+  background-color: #ffffff;
+}
+
+.movie img {
+  height: 190px;
+  width: auto;
+  display: inherit;
+}
+
+.movie div {
+  display: inline-block;
+  width: 261px;
+  margin-bottom: auto;
+  margin-top: 0px;
+  justify-content: top;
+  height: auto;
+}
+
+.movie h1, h2, h3, h4, p, a {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-family: Arial;
+  height: auto;
+}
+
+.movie h1 {
+  height: 56px;
+  width: 251px;
+  text-align: center;
+  font-size: 25px;
+  border-bottom: solid;
+  border-top: solid;
+  border-width: 1px;
+  border-color: grey;
+}
+
+.movie h2 {
+  height: 25px;
+  font-size: 20px;
+  color: #b35900;
+  text-align: center;
+  margin-top: 10px
+}
+
+.movie h3 {
+  height: 25px;
+  font-size: 20px;
+  color: #b35900;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.movie h4 {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.movie p {
+  width: auto;
+  text-align: right;
+  color: grey;
+}
+
+.movie a {
+  text-decoration: none;
+  color: black;
+}
+
+/* CSS for display selection bar */
+.display {
+  /* Positioning */
+  height: 50px;
+  width: 100vw;
+  overflow-y: auto;
+  position: fixed;
+  top: 0px;
+  padding-left: calc((100vw / 2) - 225px);
+  /* Style */
+  background-color: #b35900;
+  color: white;
+  font-family: Impact, sans-serif;
+  font-variant: small-caps;
+  font-size: 25px;
+}
+
+.display input {
+  visibility: hidden;
+  position: fixed;
+  width: 0px;
+  height: 0px;
+}
+
+.display label {
+  width: auto;
+  height: 42px;
+  padding-top: 8px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.display input:checked + label {
+  background: #e67300;
+}
+
+/* CSS for the movie list */
+.movieList {
+  width: 1200px;
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  background-color: white;
+}
+
+/* CSS for sort selection bar */
+.sort {
+  height: 40px;
+  width: 1200px;
+  font-family: Impact, sans-serif;
+  font-variant: small-caps;
+  font-size: 20px;
+}
+
+.sort input {
+  visibility: hidden;
+  position: fixed;
+  width: 0px;
+  height: 0px;
+}
+
+.sort label {
+  display: inline-block;
+  width: 229px;
+  height: 31px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 7px;
+  border-bottom: solid;
+  border-width: 2px;
+  border-color: #dddddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sort input:checked + label {
+  background-color: #eeeeee;
+}
